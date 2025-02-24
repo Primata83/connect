@@ -6,8 +6,8 @@ import { Button } from '@/components/button'
 
 export default function Home() {
   return (
-    <main className='max-w-[1240px] mx-auto- px-5 py-8 md:py-0'>
-      <div className="h-dvh flex flex-col justify-center gap-16" > 
+    
+      <div className="min-h-dvh flex flex-col justify-center gap-16" >
         <div className="flex flex-col gap-8 items-center md:items-start">
           <Image src={logo} alt='devstage' width={108.5} height={30} />
 
@@ -38,7 +38,6 @@ export default function Home() {
               Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito
             </p>
           </div>
-
           <form className="w-full bg-gray-700 border border-gray-600 rounded-2xl p-8 space-y-6 md:max-w-[440px]">
             <h2 className="font-heading font-semibold text-gray-200 text-xl">
               Inscrição
@@ -47,9 +46,9 @@ export default function Home() {
             <div className="space-y-3">
               <InputRoot>
                 <InputIcon>
-                  <User />
+                  <User/>
                 </InputIcon>
-                <InputField type="text" placeholder="Nome completo" />
+                <InputField type="text" placeholder="Nome completo "/>
               </InputRoot>
 
               <InputRoot>
@@ -67,6 +66,6 @@ export default function Home() {
           </form>
         </div>
       </div>
-    </main>
+    
   )
 }
