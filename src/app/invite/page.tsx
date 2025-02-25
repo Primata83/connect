@@ -31,6 +31,7 @@ export default function InvitePage() {
                     <Stats />                           
                 </div>
             </div>
+        
         <Ranking/>
         </div>
     )    
