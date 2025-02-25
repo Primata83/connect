@@ -1,12 +1,8 @@
 import Image from 'next/image'
 import logo from '../../assets/logo.png'
-import { InputField, InputIcon, InputRoot } from '@/components/input'
-import { BadgeCheck, Copy, Link, Medal, MousePointerClick } from 'lucide-react'
-import { IconButton } from '@/components/icon-botton'
-
-import gold from '../../assets/medalGold.png'
-import silver from '../../assets/medalSilver.png'
-import cooper from '../../assets/medalCooper.png'
+import { Ranking } from './ranking'
+import { Stats } from './stats'
+import {InviteLinkInput} from './inviteLinkInput'
 
 export default function InvitePage() {
     return (
@@ -24,84 +20,18 @@ export default function InvitePage() {
                     <div className='space-y-3'>
                         <h2>Indique e ganhe                            
                         </h2>
-                        <p className='text-gray-3000'>
+                        <p className='text-gray-300'>
                             Convide mais pessoas para o evento e concorra a prêmiros exclusivo! É 
                             só compartilhar o link abaixo e acompanhar as inscrições:                                                                                                         
                         </p>
                     </div>
-
-                    <InputRoot>
-                        <InputIcon>
-                            <Link className='size-5'/>
-                        </InputIcon>
-                        <InputField readOnly  defaultValue="http://localhost:3000/invite/cigarroaceso"/>
-                        <IconButton className='-mr-2'>
-                            <Copy className='size-5'/>
-                        </IconButton>
-                    </InputRoot>
-
-                    <div className='grid gap-3 md:grid-cols-3'>
-                        <div className='relative bg-gray-700- border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1 rounded-2xl'>
-                            <span className='font-heading text-2xl font-semibold text-gray-200 leading-none'>1042</span>
-                            <span className='text-sm text-gray-300 leading-none text-center'>Acesso ao link</span>
-                            <MousePointerClick className='size-5 text-purple absolute top-3 left-3'/>
-                        </div>   
-                        <div className='relative bg-gray-700- border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1 rounded-2xl'>
-                            <span className='font-heading text-2xl font-semibold text-gray-200 leading-none'>1042</span>
-                            <span className='text-sm text-gray-300 leading-none text-center'>Inscrições feitas</span>
-                            <BadgeCheck className='size-5 text-purple absolute top-3 left-3'/>
-                        </div> 
-                        <div className='relative bg-gray-700- border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1 rounded-2xl'>
-                            <span className='font-heading text-2xl font-semibold text-gray-200 leading-none'>3</span>
-                            <span className='text-sm text-gray-300 leading-none text-center'>Posicão no ranking</span>
-                            <Medal className='size-5 text-purple absolute top-3 left-3'/>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-
-            <div className='w-full max-w-[440px] space-y-5'>
-                <h2 className='text-gray-200 text-xl font-heading font-semibold leading-none'>
-                    Ranking de indicações
-                </h2>
-                <div className='space-y-4'>
-                    <div className='relative rounded-xl bg-gray-700 border border-gray-600 p-8 flex flex-col justify-center'>
-                        <span className='text-sm text-gray-300 leading-none'>
-                            <span className='font-bold'>1º</span>
-                            Hudson cleiton
-                        </span>
-
-                        <span className='font-heading text-2xl font-semibold text-gray-200 leading-none'>
-                            1500
-                        </span>
-                        <Image src={gold} alt='medalha de ouro' className='absolute top-0 right-8'/> 
-                    </div>
-                    <div className='relative rounded-xl bg-gray-700 border border-gray-600 p-8 flex flex-col justify-center'>
-                        <span className='text-sm text-gray-300 leading-none'>
-                        <span className='font-bold'>2º</span>
-                            Hudson cleiton
-                        </span>
-
-                        <span className='font-heading text-2xl font-semibold text-gray-200 leading-none'>
-                            1500
-                        </span>
-                        <Image src={silver} alt='medalha de ouro' className='absolute top-0 right-8'/> 
-                    </div>
-                    <div className='relative rounded-xl bg-gray-700 border border-gray-600 p-8 flex flex-col justify-center'>
-                        <span className='text-sm text-gray-300 leading-none'>
-                        <span className='font-bold'>3º</span>
-                            Hudson cleiton
-                        </span>
-
-                        <span className='font-heading text-2xl font-semibold text-gray-200 leading-none'>
-                            1500
-                        </span>
-                        <Image src={cooper} alt='medalha de ouro' className='absolute top-0 right-8'/> 
-                    </div>
                     
+                    <InviteLinkInput />
+                    
+                    <Stats />                           
                 </div>
             </div>
+        <Ranking/>
         </div>
-    )
-    
+    )    
 }
