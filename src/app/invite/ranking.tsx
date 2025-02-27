@@ -13,10 +13,10 @@ export function Ranking() {
         <div className="space-y-4">
           <div className="relative rounded-xl bg-gray-700 border border-gray-600 p-6 flex flex-col justify-center gap-3">
             <span className="text-sm text-gray-300 leading-none">
-              <span className="font-semibold">1&ordm;</span> | Diego Fernandes
+              <span className="font-semibold">1&ordm;</span> | Hudson Cleiton
             </span>
             <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-              1030
+              46
             </span>
   
             <Image src={gold} alt="" className="absolute top-0 right-8" />
@@ -24,10 +24,10 @@ export function Ranking() {
   
           <div className="relative rounded-xl bg-gray-700 border border-gray-600 p-6 flex flex-col justify-center gap-3">
             <span className="text-sm text-gray-300 leading-none">
-              <span className="font-semibold">2&ordm;</span> | Diego Fernandes
+              <span className="font-semibold">2&ordm;</span> | Jose Jõao
             </span>
             <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-              1030
+              34
             </span>
   
             <Image src={silver} alt="" className="absolute top-0 right-8" />
@@ -35,10 +35,10 @@ export function Ranking() {
   
           <div className="relative rounded-xl bg-gray-700 border border-gray-600 p-6 flex flex-col justify-center gap-3">
             <span className="text-sm text-gray-300 leading-none">
-              <span className="font-semibold">3&ordm;</span> | Diego Fernandes
+              <span className="font-semibold">3&ordm;</span> | Você Mesmo
             </span>
             <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-              1030
+              3
             </span>
   
             <Image src={cooper} alt="" className="absolute top-0 right-8" />

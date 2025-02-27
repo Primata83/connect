@@ -5,7 +5,7 @@ import { Stats } from './stats'
 import {InviteLinkInput} from './inviteLinkInput'
 
 export default function InvitePage() {
-    const inviteLink = 'http://localhost:3000/invite/3291381203801293812313'
+    const inviteLink = 'http://localhost:3000/invite/vocemesmo147258369'
   
     return (
       <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
