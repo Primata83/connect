@@ -33,7 +33,7 @@ export default function Home() {
             palestras, workshops e hackathons.
             <br />
             <br />
-            Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito
+            Dias 18 a 27 de Fevereiro | Das 9h às 12h | Online & Gratuito
           </p>
         </div>
 

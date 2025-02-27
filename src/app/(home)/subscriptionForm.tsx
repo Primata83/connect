@@ -7,6 +7,7 @@ import { User, Mail, ArrowRight } from "lucide-react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
+import Link from "next/link"
 
 const subscriptionSchema = z.object({
   name: z.string().min(2, 'Digite seu nome completo'),
@@ -77,10 +78,12 @@ export function SubscriptionForm() {
         </div>
       </div>
 
-      <Button type="submit">
-        Confirmar
-        <ArrowRight className="size-6" />
+      <Link href='http://localhost:3000/invite'>
+      <Button type="submit">        
+          Confirmar
+          <ArrowRight className="size-6" />        
       </Button>
+      </Link>
     </form>
   )
 }
