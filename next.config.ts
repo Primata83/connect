@@ -1,10 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   output: 'export',
-  distDir: 'out',
-  basePath: '/connect>',
-  assetPrefix: '/<connect>',
-};
+  basePath: '/connect', // Nome do seu repositório
+  images: {
+    unoptimized: true
+  }
+}
 
-export default nextConfig;
+export default nextConfig
