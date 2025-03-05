@@ -2,7 +2,7 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/connect', // Nome do seu repositório
+  // Remova o basePath se estiver tendo problemas
   images: {
     unoptimized: true
   }
