@@ -5,7 +5,7 @@ import { Stats } from './stats'
 import {InviteLinkInput} from './inviteLinkInput'
 
 export default function InvitePage() {
-    const inviteLink = 'http://localhost:3000/invite/vocemesmo147258369'
+    const inviteLink = 'nao sei tenho dinheiro para hospedar um projeto nextjs'
   
     return (
       <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
